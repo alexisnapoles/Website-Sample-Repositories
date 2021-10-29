@@ -5,140 +5,135 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Repository #01</title>
-
+		<!-- local stylesheet -->
         <link rel="stylesheet" href="style.css">
+		<!-- external sytlesheet: fontawesome -->
+		<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.4/css/all.css">
+
     </head>
     <body>
-        <div class="website">
-            <!-- START NAVIGATION BAR -->
-            <nav class="nav">
-                <div class="nav-logo">
-                    <img src="images/logo-cat-bigger.PNG" alt="">
-                </div>
-                <div class="nav-menu">
-                    <ul id="menubar" class="menubarlist">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <!-- portfolio will be a dropdown for repo (ecommerce, profile), artworks(1bit, sketch, vector art), photog, youtube -->
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>   
-                <div class="nav-search">
-                    <input type="search" name="" id="" placeholder="Search here...">
-                    <input type="button" value="search">
-                </div> 
-            </nav>
-            <!-- END OF NAVIGATION BAR -->
-            <!-- START HERO BOX -->
-            <div class="hero-box-parent">
-                <div class="hero-box-sub">
-                    <!-- identification image -->
-                    <div class="image-id">
-                        <img src="images/alexis.png" alt="">
-                    </div>
-                    <!-- hero description -->
-                    <div class="hero-box-header">
-                        <h1>Alexis N. Dela Torre</h1>
-                        <h5>Environmental Science graduate turned to Developer.</h5>
-                    </div>
-                    <span class="btn-hero">
-                        <input type="button" value="Hire Me" class="btn-hero-1">
-                        <input type="button" value="Open CV" class="btn-hero-1">
-                    </span>
-                </div>
-            </div>    
-            <!-- END OF HERO BOX -->
-            <!-- START INFORMATION SECTION -->
-            <div class="information-box">
-                <!-- START LEFT CONTAINER -->
-                <div class="left-container">
-                    <!-- Technologies -->
-                    <div class="technologies">
-                        <h4>Technologies:</h4>
-                        <ul class="technology-list">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                    </div>
-                    <!-- Get in touch -->
-                    <div class="form-get-in-touch">
-                        <div class="get-in-touch-header">
-                            <h4>Get in Touch with Me</h4>
-                        </div>
-                        <form action="">
-                            <div class="form-name">
-                                <label for="Name">Name</label>
-                                <input type="text" name="Name" id="">
-                            </div>
-                            <div class="form-subject">    
-                                <label for="Subject">Subject</label>
-                                <input type="text" name="Name" id="">
-                            </div>
-                            <div class="form-message">    
-                                <label for="Message">Message</label>
-                                <input type="text" name="Name" id="">
-                            </div>
-                            <!-- Submit button -->
-                            <div class="btn-form">
-                                <input type="submit" value="Submit">
-                            </div>    
-                        </form>
-                    </div>
-                    <!-- End Get in touch -->
-                    <!-- Social Links -->
-                    <div class="social-ilnks">
-                        <h4>Social Platforms:</h4>
-                        <ul class="social-links-list">
-                            <li><a href="">GitHub</a></li>
-                            <li><a href="">Wordpress</a></li>
-                            <li><a href="">Linkedin</a></li>
-                            <li><a href="">Twitter</a></li>
-                            <li><a href="">Email</a></li>
-                            <li><a href="">Discord</a></li>
-                            <li><a href="">Meetup</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- END OF LEFT CONTAINER -->
-                <!-- START RIGHT CONTAINER -->
-                <div class="right-container">
-                    <div class="right-header">
-                        <h2>Featured</h2>
-                    </div>
-                    <!-- repositories container -->
-                    <div class="repo-main-container">
-                        <div class="repo-header">
-                            <h4>Repositories</h4>
-                        </div>
-                        <div class="repo-list">    
-                            <div class="box box-1"></div>
-                            <div class="box box-2"></div>
-                            <div class="box box-3"></div>
-                        </div>    
-
-                        <input type="button" value="View More" class="btn btn-view">
-
-                    </div>
-                    <!-- artworks container -->
-                    <div class="artworks-container">
-                        <div class="art-header">
-                            <h4>Artworks</h4>
-                        </div>
-                        <div class="art-list">    
-                            <div class="box box-4"></div>
-                            <div class="box box-5"></div>
-                            <div class="box box-6"></div>
-                        </div>    
-                        <input type="button" value="View More" class="btn btn-view">
-
-                    </div>
-                </div>
-            </div>    
-            <!-- END OF RIGHT CONTAINER -->
-        </div>    
-    </body>
+		<div class="body-container grid">
+			<div class="navbar grid">
+				<div class="logo">
+					<h2 class="brand-name">&alexis</h2>
+				</div>
+				<div class="menubar-burger">
+					<li><a href="#" id="menu-list-bar"><i class="fas fa-bars"></i></a></li>
+				</div>
+				<div class="menu">
+					<ul class="menu-list" id="menu-items">
+						<li><a href="#index">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="searchbar">
+					<input type="text" name="searchbar" id="" placeholder="Search here..." autocomplete="off">
+					<!-- add serach icon for the search bar ahe~ -->
+					<input type="button" value="Search" class="btn btn-search"> 
+				</div>
+			</div>
+			<hr>
+			<div class="about grid" id="about">
+				<div class="sbout-text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius labore rem itaque saepe nobis aut.</p>
+				</div>
+				<div class="about-img">
+					<img src="images/alexis.png" alt="alexis image">
+				</div>
+			</div>
+			<hr>
+			<div class="portfolio grid" id="portfolio">
+				<h3>Repositories</h3>
+				<div class="repositories-container">
+					<div class="box">
+						<img src="images/logo-cat-bigger.PNG" alt="" width="100px">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, porro!</p>
+					</div>
+					<div class="box">
+						<img src="images/logo-cat-bigger.PNG" alt="" width="100px">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, porro!</p>
+					</div>
+					<div class="box">
+						<img src="images/logo-cat-bigger.PNG" alt="" width="100px">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, porro!</p>
+					</div>
+				</div>
+			</div>
+			<div class="artworks grid">
+				<h3>Artworks</h3>
+				<div class="artworks-container">
+					<div class="box">
+						<img src="images/logo-cat-bigger.PNG" alt="" width="100px">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, porro!</p>
+					</div>
+					<div class="box">
+						<img src="images/logo-cat-bigger.PNG" alt="" width="100px">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, porro!</p>
+					</div>
+					<div class="box">
+						<img src="images/logo-cat-bigger.PNG" alt="" width="100px">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, porro!</p>
+					</div>
+				</div>
+			</div>
+			<div class="technoloies grid">
+				<h3>Technologies</h3>
+				<div class="technologies-container">
+					<div class="box">
+						<li><i class="fab fa-html5"></i></li>
+					</div>
+					<div class="box">
+						<li><i class="fab fa-css3-alt"></i></li>
+					</div>
+					<div class="box">
+						<li><i class="fab fa-js-square"></i></li>
+					</div>
+					<div class="box">
+						<li><i class="fab fa-bootstrap"></i></li>
+					</div>
+					
+				</div>
+			</div>
+			<hr>
+			<div class="contact-container grid" id="contact">
+				<h3 class="contact-text">Get in Touch</h3>
+				<div class="name">
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name">
+				</div>
+				<div class="name">
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email">
+				</div>
+				<div class="name">
+					<label for="subject">Subject:</label>
+					<input type="text" name="subject" id="subject">
+				</div>
+				<div class="name">
+					<label for="message">Message:</label>
+					<input type="text" name="message" id="message">
+				</div>
+				<input type="submit" value="Submit" class="btn btn-submit">
+			</div>
+			<hr>
+			<footer class="footer grid">
+				<div class="copyright">
+					<p>Copyright &copy; 2021</p>
+				</div>
+				<div class="logo">
+					<img src="images/alexis.png" alt="">
+				</div>
+				<div class="social-links">
+					<ul>
+						<li><a href=""><i class="fab fa-github"></i></a></li>
+						<li><a href=""><i class="fab fa-twitter"></i></a></li>
+						<li><a href=""><i class="fab fa-wordpress"></i></a></li>
+						<li><a href=""><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>

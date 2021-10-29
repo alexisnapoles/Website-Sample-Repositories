@@ -1,215 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* FONT IMPORT FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* how to use fonts in css styling:
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif; */
 
+/* RESET FORMATS */
 * {
-    margin: 0px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
-
-.website {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-/* START NAVIGATION BAR */
-nav {
-    display: flex;
-    background-color: #382b26;
-    /* padding: px; */
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-nav>div>ul>li>a {
-    color: #b8c2b9;
+ul>li>a, 
+ul>li, 
+div>li {
     text-decoration: none;
+    list-style: none;
 }
-div>img {
-    width: 50px;
-/*     border: 1px solid #fff; */
-    display: flex;
-}
-
-div .nav-logo {
-    width: 100px;
-    height: 55px;
+.menu, .searchbar {
+    display: none;
 }
 
-.nav-menu {
-    flex: .75;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-end;
+.box {
+    background-color: rgba(207, 206, 206, 0.329);
+    border: 1px solid #ccc;
+    height: 10em;
 }
 
-.nav-menu ul li {
-    display: inline-block;
-    /* border: 1px solid #fff; */
-    padding: 0px 20px;
+/* FONTS STYLES */
+h2 {
+    font-family: 'Roboto Mono', monospace;
 }
-
-.nav-search {
-    padding: 0%;
-    margin: 0px;
+h3 {
+    font-family: 'Roboto Slab', serif;
 }
-/* END OF NAVIGATION BAR */
-
-/* START HERO BOX */
-.hero-box-parent {
-    background-color: #f4f3f3;
-    position: relative;
-    width: 100%;
-    height: 35vh;
-    display: flex;
-    justify-content: flex-start;
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 1.20em;
+    font-size: .85rem;
 }
-
-.hero-box-sub {
-    display: flex;
-    padding: 50px 198px;
-}
-
-.image-id>img {
-    width: 200px;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid #000; */
-}
-
-.hero-box-header {
-    /* border: 1px solid #000; */
-    flex: 1;
-    position: relative;
-    color: rgb(61, 60, 60);
-}
-
-div .hero-box-header {
-    /* background-color: #b00; */
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    text-align: left;
-    padding-left: 21.25%;
-    padding-top: 2.22%;
-}
-
-.btn-hero {
-    /* background-color: #000; */
-    position: absolute;
-    display: flex;
-    align-items: inherit;
-    padding-left: 21.35%;
-    padding-top: 7.5%;
-}
-/* END HERO BOX */
-
-/* END INFORMATION BOX */
-.information-box {
-    display: flex;
-    width: 100%;
-    position: relative;
-    padding-top: 2.5rem;
-}
-
-/* START LEFT CONTAINER*/
-.left-container {
-    flex: .75;
-    padding-left: 200px;
-}
-/* END LEFT CONTAINER */
-
-/* START RIGHT CONTAINER */
-.right-container {
-    flex: 3;
-    padding-left: 82.5px;
-    padding-right: 200px;
-}
-
-.right-header {
-    text-align: center;
-}
+/* MOBILE-FIRST STYLES */
 
 
-.repo-main-container,
-.artworks-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.repo-header,
-.art-header {
-    padding-left: 20px;
-}
-
-.repo-list,
-.art-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: left;
-}
-
-.btn-view {
-    width: 1100px;
-    align-self: center;
-    padding: 8px;
-    margin: 10px 0px;
-}
-
-div .box {
-    width: 350px;
-    height: 300px;
-}
-
-.box-1,
-.box-2,
-.box-3 {
-    background-image: url(images/repo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.box-4 {
-    background-image: url(images/vector-1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.box-5 {
-    background-image: url(images/photo-1a.JPG);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.box-6 {
-    background-image: url(images/logo-cat-bigger.PNG);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-/* END RIGHT CONTAINER */
-/* END INFORMATION BOX */
-
-/* START GET IN TOUCH */
-.form-get-in-touch {
-    display: flex;
-    flex-direction: column;
-}
-
-div>form {
-    display: flex;
-    flex-direction: column; 
-}
-/* END GET IN TOUCH */
-
-/* COMMON PORPERTIES */
-input[type="button"] {
-    border-radius: 10px;
-}
+/* tablet device */
+                                   
